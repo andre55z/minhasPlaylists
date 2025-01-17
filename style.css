@@ -1,0 +1,90 @@
+body
+{
+
+    background-color: var(--bgc);
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+header
+{
+    height: 10px;
+}
+.foto
+{
+    justify-content: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.foto img {
+    border-radius: 50%;
+    height: 200px;
+    box-shadow: 0 2px 200px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+h1
+{
+    font-size:25px;
+    text-align: center;
+    justify-content: center;
+    color: var(--letc);
+}
+:root
+{
+    --green: limegreen;
+    --black: black;
+    --white: white;
+    --dgray: darkgray;
+
+}
+.btn
+{
+    border-radius: 10px;
+    width:220px;
+    height: 3rem;
+    color: var(--btnfontc);
+    background-color: var(--btnbgc);
+    margin: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.btn a
+{
+    text-decoration: none;
+    color: var(--btnfontc);
+}
+.btncolor
+{
+    width: 10;
+    border-radius: 20px;
+    height: 2rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.dark
+{
+    --btnbgc: var(--black);
+    --btnfontc: var(--green);
+    --bgc: var(--dgray);
+}
+
+.light
+{
+    --btnbgc: var(--green);
+    --btnfontc: var(--black);
+    --bgc: var(--white);
+    --letc: var(--black);
+}
+.btn:hover {
+    background-color: purple; 
+    color: white; 
+    transform: scale(1.05); 
+}
+.btncolor:hover
+{
+    transform: scale(1.05);
+    background-color: aqua;
+}
